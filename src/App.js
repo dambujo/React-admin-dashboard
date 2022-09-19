@@ -25,7 +25,7 @@ import {
 import './App.css';
 
 const App = () => {
-  const activeMenu = false;
+  const activeMenu = true;
   return (
     <div>
       <BrowserRouter>
@@ -62,7 +62,7 @@ const App = () => {
           <div>
             <Routes>
               {/* Dashboard */}
-              <Route path="/" element="" />
+              <Route path="/" element={<Ecommerce />} />
               <Route path="/ecommerce" element={<Ecommerce />} />
 
               {/* Pages */}
